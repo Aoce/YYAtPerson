@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kNs-8E-4Lf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lwY-iv-g2Q">
+            <objects>
+                <navigationController id="kNs-8E-4Lf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yKv-3I-TFc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gv6-x5-8V8" kind="relationship" relationship="rootViewController" id="hvd-IZ-Psm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7G-Kf-DMI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="181"/>
+        </scene>
+        <!--示例-->
+        <scene sceneID="P9j-vB-vgZ">
+            <objects>
+                <viewController id="gv6-x5-8V8" customClass="YYViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cJI-Wo-Aar"/>
+                        <viewControllerLayoutGuide type="bottom" id="wTH-K7-1D4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4t3-dd-b16">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" keyboardDismissMode="onDrag" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="obN-zk-Es9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="k6P-2J-vj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="obN-zk-Es9" firstAttribute="leading" secondItem="4t3-dd-b16" secondAttribute="leading" id="3EN-53-dJa"/>
+                            <constraint firstItem="obN-zk-Es9" firstAttribute="top" secondItem="cJI-Wo-Aar" secondAttribute="bottom" id="adW-ms-xYs"/>
+                            <constraint firstAttribute="trailing" secondItem="obN-zk-Es9" secondAttribute="trailing" id="bnZ-cz-lcf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="示例" id="lPb-gR-mri"/>
+                    <connections>
+                        <outlet property="textView" destination="obN-zk-Es9" id="dOT-tZ-Gqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlk-H1-k8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112.8000000000002" y="177.66116941529236"/>
+        </scene>
+    </scenes>
+</document>
